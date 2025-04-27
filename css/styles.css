@@ -68,19 +68,36 @@ body {
   gap: 40px;
   list-style-type: none;
   margin-left: -200px;
+  height: 70px;
+  align-items: center; 
+  border: 1px solid red;
   }
 
 .nav {
+  border: 1px solid red;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 2%;
   text-decoration: none;
-  color: #2e2f42;
+  color: #2e2f42; 
 }
 
-.nav:hover, .nav:focus{
-  color: #4d5ae5;
+.line {
+  height: 4px;
+  border-radius: 2px;
+  background-color: #404BBF;
+}
+
+.nav:hover {
+  color: #404BBF;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms ease 0s;
+}
+
+
+.nav:focus {
+  color: #404BBF;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms ease 0s;
 }
 
 address{
@@ -91,7 +108,8 @@ address{
 }
 
 address:hover, address:focus{
-  color: #4d5ae5;
+  color: #404BBF;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms ease 0s;
 }
 
 .text {
@@ -107,8 +125,8 @@ address:hover, address:focus{
   background-repeat: no-repeat; 
   background-size: cover;
   background-position: bottom;
+  width: 1440px;
   height: 600px;
-  padding-top: 72px;
   text-align: center;
   padding-top: 188px;
   padding bottom: 188px;
@@ -136,11 +154,12 @@ address:hover, address:focus{
   border-radius: 4px;
   min-width: 169px;
   min-height: 56px;
-  
+  box-shadow: 0px 4px 4px 0px #00000026 15%;
 }
 
 .button1:hover, .button1:focus{
   background-color: #404bbf;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms ease 0s;
 }
 
 .feature {
@@ -190,6 +209,7 @@ address:hover, address:focus{
   border-radius: 0 0 4px 4px;
   padding-bottom: 32px;
   text-align: center;
+  box-shadow: 0px 0px 1px 0px #2E2F4214 8%, 0px 1px 1px 0px #2E2F4229 16%;
 }
 
  .team-list .header3 {
@@ -204,6 +224,7 @@ address:hover, address:focus{
   gap: 24px;
   flex-wrap: wrap;
   justify-content: center;
+  border: 1px solid red;
 }
  
 .portfolio-list li {
@@ -212,6 +233,12 @@ address:hover, address:focus{
   border-left: 1px solid #E7E9FC;
   border-bottom: 1px solid #E7E9FC;
   border-right: 1px solid #E7E9FC;
+  border: 1px solid blue;
+}
+.portfolio-list li:hover{
+cursor: pointer;
+box-shadow: 0px 1px 6px 0px #2E2F42 8%;
+transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms ease 0s;
 }
 
 .portfolio{
@@ -263,4 +290,47 @@ footer {
 .footer-child1{
   padding-top: 100px;
   padding-bottom: 16px; 
+}
+
+.feature-icon{
+  display: flex;
+  position: relative;
+  border: 1px solid #8E8F99;
+  width: 264px;
+  height: 112px;
+  border-radius: 4px;
+  background-color: #F4F4FD;
+  margin-bottom: 8px;
+}
+
+.icon {
+  display: inline-block;
+  position: absolute;
+  margin: 24px 100px;
+  width: 64px;
+  height: 64px;
+  fill: currentColor;
+}
+
+.team-icon{
+  display: flex;
+  width: 232px;
+  height: 40px;
+  gap: 24px;
+  margin-left: 16px;
+  padding-bottom: 32px;
+  padding-top: 8px;
+}
+.team-list .social-link{
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4D5AE5;
+}
+
+.social-icon{ 
+  width: 16px;
+  height: 16px;
+  margin: auto;
 }
