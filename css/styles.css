@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #2e2f42;
+}
+
+.container{
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.section{
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.top-line {
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  border-width: 1px solid #e7e9fc;
+  background-color: #ffffff;
+  height: 72px;  
+}
+
+.head-container{
+  width: 1158px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.head-container .container-child{
+  text-align: center;
+}
+
+.logo1 {
+  display: flex;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 3%;
+  text-decoration: none;
+}
+
+.web {
+  color: #4d5ae5;
+}
+
+.studio {
+  color: #2e2f42;
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px;
+  list-style-type: none;
+  margin-left: -200px;
+  }
+
+.nav {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 2%;
+  text-decoration: none;
+  color: #2e2f42;
+}
+
+.nav:hover, .nav:focus{
+  color: #4d5ae5;
+}
+
+address{
+  display: flex;
+  gap: 40px;
+  padding-right: 10px;
+  justify-content: flex-end;
+}
+
+address:hover, address:focus{
+  color: #4d5ae5;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 2%;
+  text-decoration: none;
+  color: #434455;
+}
+
+.main-header {
+  background-color: #2e2f42;
+  height: 600px;
+  padding-top: 72px;
+  text-align: center;
+  padding-top: 188px;
+  padding bottom: 188px;
+}
+
+.header1 {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 2%;
+  color: #ffffff;
+  margin-bottom: 48px;
+}
+
+.button1 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 4%;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #4d5ae5;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 4px;
+  min-width: 169px;
+  min-height: 56px;
+  
+}
+
+.button1:hover, .button1:focus{
+  background-color: #404bbf;
+}
+
+.feature {
+  background-color: #ffffff;
+  padding: 120px 156px;
+}
+
+.feature-list {
+  display: flex;
+  gap: 24px;
+  height: 104px;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.header2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 2%;
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+.team {
+  background-color: #f4f4fd;
+  height: 732px;
+}
+
+.header3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1,2;
+  letter-spacing: 2%;
+  margin-bottom: 8px;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.team-list li{
+  background-color: #ffffff;
+  border-radius: 0 0 4px 4px;
+  padding-bottom: 32px;
+  text-align: center;
+}
+
+ .team-list .header3 {
+  display: flex;
+  padding-top: 32px;
+  justify-content: center;
+}
+
+.portfolio-list {
+  list-style-type: none;
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+ 
+.portfolio-list li {
+  background-color: #FFFFFF;
+  column-gap: 48px;
+  border-left: 1px solid #E7E9FC;
+  border-bottom: 1px solid #E7E9FC;
+  border-right: 1px solid #E7E9FC;
+}
+
+.portfolio{
+  padding-top: 120px;
+  padding-bottom: 0;
+  margin-bottom: 120px;
+}
+
+.portfolio-list .header3{
+  display: flex;
+  padding-top: 32px;
+  padding-left: 16px;
+}
+
+.portfolio-list .text{
+  padding-left: 16px;
+  margin-bottom: 32px;
+}
+
+footer {
+  background-color: #2e2f42;
+  height: 312px;
+}
+
+.logo2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 3%;
+  text-decoration: none;
+}
+
+.web2 {
+  color: #4d5ae5;
+}
+
+.studio2 {
+  color: #f4f4fd;
+}
+
+.footer-text {
+  font-size: 16px;
+  line-height: 1,5;
+  letter-spacing: 2%;
+  color: #f4f4fd;
+}
+
+.footer-child1{
+  padding-top: 100px;
+  padding-bottom: 16px; 
+}
