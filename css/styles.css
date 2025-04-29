@@ -69,35 +69,40 @@ body {
   list-style-type: none;
   margin-left: -200px;
   height: 70px;
-  align-items: center; 
-  border: 1px solid red;
+  align-items: center;
   }
 
 .nav {
-  border: 1px solid red;
+  position: relative;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 2%;
   text-decoration: none;
-  color: #2e2f42; 
-}
-
-.line {
-  height: 4px;
-  border-radius: 2px;
-  background-color: #404BBF;
+  color: #2e2f42;
+  overflow: hidden;
 }
 
 .nav:hover {
   color: #404BBF;
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms ease 0s;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
 .nav:focus {
   color: #404BBF;
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms ease 0s;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav::after{
+  content:"";
+  width: 100%;
+  height: 4px;
+  background-color: #404BBF;
+  display: block;
+  position: absolute;
+  margin-top: 20px;
+  border-radius: 2px;
 }
 
 address{
@@ -109,7 +114,7 @@ address{
 
 address:hover, address:focus{
   color: #404BBF;
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms ease 0s;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .text {
@@ -159,7 +164,7 @@ address:hover, address:focus{
 
 .button1:hover, .button1:focus{
   background-color: #404bbf;
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms ease 0s;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .feature {
@@ -173,6 +178,25 @@ address:hover, address:focus{
   height: 104px;
   list-style-type: none;
   padding-left: 0;
+}
+
+.feature-icon{
+  display: flex;
+  position: relative;
+  border: 1px solid #8E8F99;
+  width: 264px;
+  height: 112px;
+  border-radius: 4px;
+  background-color: #F4F4FD;
+  margin-bottom: 8px;
+}
+.icon {
+  display: inline-block;
+  position: absolute;
+  margin: 24px 100px;
+  width: 64px;
+  height: 64px;
+  fill: currentColor;
 }
 
 .header2 {
@@ -218,6 +242,29 @@ address:hover, address:focus{
   justify-content: center;
 }
 
+.team-icon{
+  display: flex;
+  width: 232px;
+  height: 40px;
+  gap: 24px;
+  margin-left: 16px;
+  padding-bottom: 32px;
+  padding-top: 8px;
+}
+.team-list .social-link{
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4D5AE5;
+}
+
+.social-icon{ 
+  width: 16px;
+  height: 16px;
+  margin: auto;
+}
+
 .portfolio-list {
   list-style-type: none;
   display: flex;
@@ -237,7 +284,6 @@ address:hover, address:focus{
 .portfolio-item {
   position: relative;
   overflow: hidden;
-  border: 1px solid blue;
 }
 
 .overlay{
@@ -246,13 +292,15 @@ address:hover, address:focus{
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 2%;
+  padding-top: 40px;
+  padding-left: 32px;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  transform: translateY(100%);
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms ease 0s;
+  width: 360px;
+  height: 300px;
+  transform: translate(360px, 300px);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item:hover .overlay{
@@ -261,7 +309,7 @@ address:hover, address:focus{
 .portfolio-list li:hover{
 cursor: pointer;
 box-shadow: 0px 1px 6px 0px #2E2F42 8%;
-transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms ease 0s;
+transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio{
@@ -310,41 +358,39 @@ footer {
   color: #f4f4fd;
 }
 
+.footer-text2{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1,5;
+  letter-spacing: 2%;
+  color: #FFFFFF;
+}
 .footer-child1{
-  padding-top: 100px;
-  padding-bottom: 16px; 
-}
-
-.feature-icon{
   display: flex;
-  position: relative;
-  border: 1px solid #8E8F99;
+  flex-direction: column;
   width: 264px;
-  height: 112px;
-  border-radius: 4px;
-  background-color: #F4F4FD;
-  margin-bottom: 8px;
+  gap: 17.5px;
+  padding-top: 101.5px;
+  padding-bottom: 16px;
 }
 
-.icon {
-  display: inline-block;
-  position: absolute;
-  margin: 24px 100px;
-  width: 64px;
-  height: 64px;
-  fill: currentColor;
-}
-
-.team-icon{
+.footer-child2{
   display: flex;
-  width: 232px;
-  height: 40px;
-  gap: 24px;
-  margin-left: 16px;
-  padding-bottom: 32px;
-  padding-top: 8px;
+  flex-direction: column;
+  gap: 16px;
+  width: 208px;
+  margin: 0;
+  margin-left: 540px;
+  margin-top: -100px;
 }
-.team-list .social-link{
+.footer-icon{
+  display: flex;
+  width: 208px;
+  height: 40px;
+  gap: 16px;
+}
+
+.footer-icon .social-link{
   display: flex;
   width: 40px;
   height: 40px;
@@ -352,8 +398,7 @@ footer {
   background-color: #4D5AE5;
 }
 
-.social-icon{ 
-  width: 16px;
-  height: 16px;
-  margin: auto;
+.footer-icon .social-link:hover{
+  background-color: #31D0AA;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
