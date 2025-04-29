@@ -74,6 +74,7 @@ body {
 
 .nav {
   position: relative;
+  display: inline-block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -87,15 +88,25 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.nav::before{
+  overflow: hidden;
+}
 .nav::after{
   content:"";
+  position: absolute;
+  left: 0;
+  bottom: 0;
   width: 100%;
   height: 4px;
+  bottom: -24px;
   background-color: #404BBF;
-  display: block;
-  position: absolute;
-  margin-top: 20px;
   border-radius: 2px;
+  transform: scaleX(0);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav:hover::after, .nav:focus::after{
+  transform: scaleX(1);
 }
 
 address{
