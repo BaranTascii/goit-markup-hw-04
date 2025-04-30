@@ -88,10 +88,7 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav::before{
-  overflow: hidden;
-}
-.nav:after{
+.nav-line:after{
   content:"";
   position: absolute;
   left: 0;
@@ -154,15 +151,19 @@ address:hover, address:focus{
 }
 
 .header1 {
+  position: absolute;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 2%;
-  color: #ffffff;
-  margin-bottom: 48px;
+  color: #ffffff;  
+  top: 188px;
+  left: 472px;
+  z-index: 1;
 }
 
 .button1 {
+  position: absolute;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -171,11 +172,13 @@ address:hover, address:focus{
   color: #ffffff;
   background-color: #4d5ae5;
   border: none;
-  padding: 16px 32px;
+  top: 356px;
+  left: 635px;
   border-radius: 4px;
   min-width: 169px;
   min-height: 56px;
-  box-shadow: 0px 4px 4px 0px #00000026 15%;
+  box-shadow: 0px 4px 4px 0px #00000026;
+  z-index: 1;
 }
 
 .button1:hover, .button1:focus{
@@ -252,7 +255,7 @@ address:hover, address:focus{
   border-radius: 0 0 4px 4px;
   padding-bottom: 32px;
   text-align: center;
-  box-shadow: 0px 0px 1px 0px #2E2F4214 8%, 0px 1px 1px 0px #2E2F4229 16%;
+  box-shadow: 0px 0px 1px 0px #2E2F4214, 0px 1px 1px 0px #2E2F4229;
 }
 
  .team-list .header3 {
@@ -333,7 +336,7 @@ address:hover, address:focus{
 
 .portfolio-list li:hover{
 cursor: pointer;
-box-shadow: 0px 1px 6px 0px #2E2F42 8%;
+box-shadow: 0px 1px 6px 0px #2E2F42;
 transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
