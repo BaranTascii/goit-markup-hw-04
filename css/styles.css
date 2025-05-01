@@ -288,7 +288,7 @@ address:hover, address:focus{
 }
 
 .social-link:hover{
-  background-color: #31D0AA;
+  background-color: #404BBF;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -300,7 +300,9 @@ address:hover, address:focus{
   justify-content: center;
 }
  
-.portfolio-list li {
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
   background-color: #FFFFFF;
   column-gap: 48px;
   border-left: 1px solid #E7E9FC;
@@ -308,12 +310,17 @@ address:hover, address:focus{
   border-right: 1px solid #E7E9FC;
 }
 
-.portfolio-item {
+.portfolio-explanation{
   position: relative;
-  overflow: hidden;
+  padding-top: 32px;
+  padding-left: 16px;
+  padding-bottom: 32px;
+  background-color: #FFFFFF;
+  z-index: 9;
 }
 
 .overlay{
+  position: absolute;
   background-color: #4D5AE5;
   color: #F4F4FD;
   font-size: 16px;
@@ -321,7 +328,6 @@ address:hover, address:focus{
   letter-spacing: 2%;
   padding-top: 40px;
   padding-left: 32px;
-  position: absolute;
   top: 0;
   left: 0;
   width: 360px;
@@ -346,16 +352,6 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-bottom: 120px;
 }
 
-.portfolio-list .header3{
-  display: flex;
-  padding-top: 32px;
-  padding-left: 16px;
-}
-
-.portfolio-list .text{
-  padding-left: 16px;
-  margin-bottom: 32px;
-}
 
 footer {
   background-color: #2e2f42;
